@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "675376763704",
+    "firebase_url": "https://moblie-app-one-team-stew.firebaseio.com",
+    "project_id": "moblie-app-one-team-stew",
+    "storage_bucket": "moblie-app-one-team-stew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675376763704:android:1be6d18e1cc451ee4967cd",
+        "android_client_info": {
+          "package_name": "jbnu.moblie.app.one.team.STEW"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675376763704-agdo0hov6kki5kglqgsflo6q48ab469f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jbnu.moblie.app.one.team.STEW",
+            "certificate_hash": "02506701b300e98f372ba45e81c0a676dab4d4dc"
+          }
+        },
+        {
+          "client_id": "675376763704-sf75c2n18036hkc20eslap9foputudc3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSHzUyW6N_zFKKvaeWO3Oc8nTj-4cSBAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675376763704-sf75c2n18036hkc20eslap9foputudc3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
