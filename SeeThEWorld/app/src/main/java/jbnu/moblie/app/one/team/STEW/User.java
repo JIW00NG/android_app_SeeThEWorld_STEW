@@ -21,12 +21,12 @@ public class User {
     }
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference databaseReference = database.getReference("user");
+    DatabaseReference databaseReference = database.getReference("User");
 
 
     public void userRegist(String username){
 
-        databaseReference.child(name).child("user_name").setValue(username);
+        databaseReference.child(name).child("user_name").setValue(name);
         databaseReference.child(name).child("count").setValue(0);
     }
 

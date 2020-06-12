@@ -30,6 +30,7 @@ public class UploadToStorage extends IntentService {
     Bitmap bitmapImage;
     Uri filePath;
     Uri imageUri;
+    User user = new User();
 
     public UploadToStorage() {
         super("UploadToStorage");
@@ -58,7 +59,7 @@ public class UploadToStorage extends IntentService {
             String filename = Long.toString(count+1) + ".png";
 
             //storage 주소와 폴더 파일명을 지정
-            StorageReference storageRef = storage.getReferenceFromUrl("gs://moblie-app-one-team-stew.appspot.com").child("images/" + filename);
+            StorageReference storageRef = storage.getReferenceFromUrl("gs://moblie-app-one-team-stew.appspot.com").child(user.getName()+"/" + filename);
 
             storageRef.putFile(filePath)
                     //성공

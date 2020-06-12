@@ -24,8 +24,7 @@
             android:layout_marginRight="8dp"
             android:ems="10"
             android:hint="E-mail"
-            android:inputType="textEmailAddress"
-            android:text="test@google.com" />
+            android:inputType="textEmailAddress" />
 
         <Button
             android:id="@+id/button_login"
@@ -53,7 +52,6 @@
             android:ems="10"
             android:hint="password"
             android:inputType="textPassword"
-            android:text="111111"
             android:textIsSelectable="false" />
 
         <Button
@@ -63,5 +61,13 @@
             android:layout_gravity="center"
             android:text="Sign Up" />
     </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox_auto_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="65dp"
+        android:text="AUTO LOGIN" />
 
 </LinearLayout>

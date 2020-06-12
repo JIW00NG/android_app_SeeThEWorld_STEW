@@ -43,7 +43,7 @@ public class RecognisedRecordActivity extends Activity {
         setContentView(R.layout.activity_recognised_record);
 
         Intent intent = getIntent();
-        String name=intent.getStringExtra("user");
+        final String name=intent.getStringExtra("user");
 
         textView=findViewById(R.id.text_view);
         backButton=findViewById(R.id.button_goto_record);
@@ -85,7 +85,7 @@ public class RecognisedRecordActivity extends Activity {
                     linear.addView(imageButton);
                     //LinearLayout 정의된거 add
 
-                    storageRef.child("images/"+i+".png").getDownloadUrl().addOnCompleteListener(new OnCompleteListener<Uri>() {
+                    storageRef.child(name+"/"+i+".png").getDownloadUrl().addOnCompleteListener(new OnCompleteListener<Uri>() {
 
                         @Override
                         public void onComplete(@NonNull Task<Uri> task) {

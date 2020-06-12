@@ -815,6 +815,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id checkBox_auto_login
 id checkbox
 id checked
 id chronometer
@@ -869,6 +870,7 @@ id light
 id line1
 id line3
 id linearLayout
+id linearLayout2
 id linear_root
 id listMode
 id list_item

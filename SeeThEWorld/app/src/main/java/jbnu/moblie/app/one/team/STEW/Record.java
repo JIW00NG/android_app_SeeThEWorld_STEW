@@ -81,7 +81,7 @@ public class Record extends Activity {
             }
         });
 
-        storageRef.child("images/"+num+".png").getDownloadUrl().addOnCompleteListener(new OnCompleteListener<Uri>() {
+        storageRef.child(name+"/"+num+".png").getDownloadUrl().addOnCompleteListener(new OnCompleteListener<Uri>() {
 
             @Override
             public void onComplete(@NonNull Task<Uri> task) {
@@ -89,7 +89,6 @@ public class Record extends Activity {
                     Glide.with(Record.this)
                             .load(task.getResult())
                             .fitCenter()
-                            .centerCrop()
                             .into(imageView);
 
                 } else {
