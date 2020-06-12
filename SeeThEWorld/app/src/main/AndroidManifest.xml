@@ -29,6 +29,10 @@
         <activity android:name="jbnu.moblie.app.one.team.STEW.Record">
 
         </activity>
+        <activity android:name="jbnu.moblie.app.one.team.STEW.TextTranslationActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name="jbnu.moblie.app.one.team.STEW.Loading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

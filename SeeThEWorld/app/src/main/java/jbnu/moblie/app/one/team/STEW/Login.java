@@ -32,6 +32,7 @@ public class Login extends AppCompatActivity {
     private Button buttonSignUp;
     private CheckBox checkBoxAutoLogin;
 
+    public boolean AUTOLOGINCHECK = false;
     public boolean AUTOLOGIN = false;
 
 
@@ -48,9 +49,11 @@ public class Login extends AppCompatActivity {
         checkBoxAutoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(AUTOLOGIN==false){
+                if(AUTOLOGINCHECK ==false){
+                    AUTOLOGINCHECK =true;
                     AUTOLOGIN=true;
-                }else if(AUTOLOGIN==true){
+                }else if(AUTOLOGINCHECK ==true){
+                    AUTOLOGINCHECK =false;
                     AUTOLOGIN=false;
                 }
             }
@@ -59,14 +62,18 @@ public class Login extends AppCompatActivity {
         editTextEmail = (EditText) findViewById(R.id.edittext_email);
         editTextPassword = (EditText) findViewById(R.id.edittext_password);
 
-        AUTOLOGIN=pref.getBoolean("isautologin",false);
+        AUTOLOGINCHECK =pref.getBoolean("isautologin",false);
 
-        if(AUTOLOGIN){
+        if(AUTOLOGINCHECK){
             autoLoginId=pref.getString("autoid","");
             editTextEmail.setText(autoLoginId);
             autoLoginPassword=pref.getString("autopassword","");
             editTextPassword.setText(autoLoginPassword);
             checkBoxAutoLogin.setChecked(true);
+            if(pref.getBoolean("autologin",false)){
+                loginUser(editTextEmail.getText().toString(), editTextPassword.getText().toString(),editor);
+
+            }
         }
 
         buttonSignUp = (Button) findViewById(R.id.button_sign_up);
@@ -115,12 +122,12 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // 로그인 성공
-                            if(AUTOLOGIN){
+                            if(AUTOLOGINCHECK){
                                 editor.putString("autoid",finalEmail);
                                 editor.putString("autopassword",finalPassword);
-                                editor.putBoolean("isautologin",AUTOLOGIN);
+                                editor.putBoolean("isautologin", AUTOLOGINCHECK);
                                 editor.commit();
-                            }else if(!AUTOLOGIN){
+                            }else if(!AUTOLOGINCHECK){
                                 editor.clear();
                                 editor.commit();
                             }
@@ -132,6 +139,8 @@ public class Login extends AppCompatActivity {
                         }
                     }
                 });
+        editor.putBoolean("autologin",true);
+        editor.commit();
     }
 
     @Override

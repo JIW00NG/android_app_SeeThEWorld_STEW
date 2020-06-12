@@ -1,6 +1,7 @@
 package jbnu.moblie.app.one.team.STEW;
 
 import android.app.Activity;
+import android.app.NotificationManager;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -38,8 +39,10 @@ public class Record extends Activity {
 
     private Button copyButton;
     private Button backButton;
+    private Button translationButton;
     private EditText editText;
     private ImageView imageView;
+
 
     FirebaseStorage storage = FirebaseStorage.getInstance();
     StorageReference storageRef = storage.getReference();
@@ -57,6 +60,7 @@ public class Record extends Activity {
         System.out.println(name);
 
         copyButton=findViewById(R.id.button_copy);
+        translationButton=findViewById(R.id.button_translationView2);
         backButton=findViewById(R.id.button_back);
         editText=findViewById(R.id.edit_text_view);
         imageView=findViewById(R.id.image_view);
@@ -70,6 +74,14 @@ public class Record extends Activity {
                 ClipboardManager clipboard = (ClipboardManager)getSystemService(Context.CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("recognised text",editText.getText());
                 clipboard.setPrimaryClip(clip);
+            }
+        });
+        translationButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Record.this, TextTranslationActivity.class);
+                intent.putExtra("text", editText.getText().toString());
+                startActivity(intent);
             }
         });
 
@@ -110,6 +122,9 @@ public class Record extends Activity {
             }
 
         });
+
+        NotificationManager notificationManager =  (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.cancel(1);
 
     }
 }

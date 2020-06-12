@@ -804,12 +804,17 @@ id btn_join
 id buttonPanel
 id button_back
 id button_copy
+id button_copy_resource
+id button_copy_target
 id button_gallery
 id button_goto_record
 id button_login
 id button_logout
 id button_sign_up
 id button_text
+id button_translate
+id button_translationView
+id button_translationView2
 id cancel_action
 id center
 id center_horizontal
@@ -942,7 +947,10 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
 id textView2
+id textView4
+id textView_resource
 id textView_signUpTitle
+id textView_target
 id text_view
 id time
 id title
@@ -1006,6 +1014,7 @@ layout activity_recognised_record
 layout activity_record
 layout activity_sign_up
 layout activity_text_recognise
+layout activity_text_translation
 layout custom_dialog
 layout notification_action
 layout notification_action_tombstone
@@ -1028,6 +1037,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw translate_models_metadata
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1495,3 +1505,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml rapid_response_client_defaults

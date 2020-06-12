@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-57:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\1cc324bca91cb281f85c4c1528b9e48b\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\95c27f1e561f59170f577bf124144243\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\57eaa9415bddadcf0bb4e692468635f4\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5204ad1d065812c0c63f17969b932851\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:2:1-18:12
@@ -17,11 +18,15 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ipkjw\.g
 MERGED from [com.google.firebase:firebase-auth:19.3.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-core:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3ce44ab011257bfad095a92706483a5e\jetified-firebase-core-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:2:1-18:12
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate-model:20.0.7] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\ec5f7fff909647d510c9aba7752153af\jetified-firebase-ml-natural-language-translate-model-20.0.7\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-analytics:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\54867c9f03b007eeeec6f0e4aff3c685\jetified-firebase-analytics-17.4.3\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\40901ca6ce3fedd904480108591740da\jetified-firebase-auth-interop-19.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\12b3e9f7059661c3dea9fb5807dbeb41\jetified-firebase-database-collection-17.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\e5795443aa52a3bb152afbfbd1fb222c\jetified-play-services-auth-base-17.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-vision-image-label:18.0.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\69fc9f293927419b7adfb9ff6900866b\jetified-play-services-vision-image-label-18.0.3\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.firebase:firebase-ml-common:22.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5df68e997ad42d9e697178ed583987fe\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:2:1-17:12
 MERGED from [com.google.android.gms:play-services-vision-face-contour-internal:16.0.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d2da00e9346c5195b6eb15c22b0df78e\jetified-play-services-vision-face-contour-internal-16.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-vision:20.1.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\c5e3433f4512f65b6088540339f93416\jetified-play-services-vision-20.1.0\AndroidManifest.xml:2:1-9:12
@@ -29,12 +34,15 @@ MERGED from [com.google.android.gms:play-services-vision-common:19.1.0] C:\Users
 MERGED from [com.google.mlkit:common:16.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\8b0c6ad749d9d03a03b012726e7561d7\jetified-common-16.0.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5e7f37f763ca279bbd490031cf0208e3\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3b629effeed32d263f2a3ddc8817d08b\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-ml-natural-language-smart-reply:18.0.7] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\6afe6bc8afb92c14c23be60c98632a4c\jetified-firebase-ml-natural-language-smart-reply-18.0.7\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\8ae93dfc83e04a2b5791c39b692b7fe3\jetified-play-services-flags-17.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\be2a164d7c25251de9814bfeda4fbd16\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:2:1-19:12
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\ac6a73fb7ebfd3402c56994098ef0659\jetified-firebase-installations-interop-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\43e96ce5530e990e72ac70f577748e00\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
@@ -82,20 +90,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ipkjw\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\db53beac5b230480e4157a5f013406a6\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\f4b9dda930b9a3b046af42c8be968aa9\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\bc918020bbc60f26a2ba0d51df8e7595\jetified-transport-api-2.2.0\AndroidManifest.xml:15:1-22:12
-INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-57:12
 	package
 		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:3:5-44
 		INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-53:12
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-57:12
 		INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-53:12
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:1-57:12
 		INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:2:11-69
@@ -107,6 +115,8 @@ MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:27:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:11:5-67
@@ -134,7 +144,7 @@ ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWor
 	android:name
 		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:9:22-77
 application
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:11:5-51:19
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:11:5-55:19
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5204ad1d065812c0c63f17969b932851\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-ml-vision:24.0.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5204ad1d065812c0c63f17969b932851\jetified-firebase-ml-vision-24.0.3\AndroidManifest.xml:8:5-16:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\62c53a30f132c6f6415620e53fe7c190\jetified-glide-4.11.0\AndroidManifest.xml:10:5-20
@@ -153,12 +163,18 @@ MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\ipkjw\.gradl
 MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-core:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3ce44ab011257bfad095a92706483a5e\jetified-firebase-core-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3ce44ab011257bfad095a92706483a5e\jetified-firebase-core-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-analytics:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\54867c9f03b007eeeec6f0e4aff3c685\jetified-firebase-analytics-17.4.3\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\54867c9f03b007eeeec6f0e4aff3c685\jetified-firebase-analytics-17.4.3\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\40901ca6ce3fedd904480108591740da\jetified-firebase-auth-interop-19.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\40901ca6ce3fedd904480108591740da\jetified-firebase-auth-interop-19.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-vision-image-label:18.0.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\69fc9f293927419b7adfb9ff6900866b\jetified-play-services-vision-image-label-18.0.3\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-vision-image-label:18.0.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\69fc9f293927419b7adfb9ff6900866b\jetified-play-services-vision-image-label-18.0.3\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:8:5-16:19
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-ml-common:22.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5df68e997ad42d9e697178ed583987fe\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-ml-common:22.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5df68e997ad42d9e697178ed583987fe\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.android.gms:play-services-vision-face-contour-internal:16.0.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d2da00e9346c5195b6eb15c22b0df78e\jetified-play-services-vision-face-contour-internal-16.0.1\AndroidManifest.xml:7:5-20
@@ -173,8 +189,12 @@ MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ipkj
 MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5e7f37f763ca279bbd490031cf0208e3\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3b629effeed32d263f2a3ddc8817d08b\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3b629effeed32d263f2a3ddc8817d08b\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-ml-natural-language-smart-reply:18.0.7] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\6afe6bc8afb92c14c23be60c98632a4c\jetified-firebase-ml-natural-language-smart-reply-18.0.7\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-ml-natural-language-smart-reply:18.0.7] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\6afe6bc8afb92c14c23be60c98632a4c\jetified-firebase-ml-natural-language-smart-reply-18.0.7\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\be2a164d7c25251de9814bfeda4fbd16\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
@@ -183,6 +203,8 @@ MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\ipkjw\.g
 MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:13:5-21:19
 MERGED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:11:5-17:19
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:25:5-37:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\43e96ce5530e990e72ac70f577748e00\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
@@ -247,46 +269,54 @@ activity#jbnu.moblie.app.one.team.STEW.Record
 ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:29:9-31:20
 	android:name
 		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:29:19-70
+activity#jbnu.moblie.app.one.team.STEW.TextTranslationActivity
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:32:9-35:20
+	android:screenOrientation
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:33:13-49
+	android:name
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:32:19-87
 activity#jbnu.moblie.app.one.team.STEW.Loading
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:32:9-38:20
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:36:9-42:20
 	android:name
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:32:19-71
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:36:19-71
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:33:13-37:29
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:36:27-74
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:40:27-74
 activity#jbnu.moblie.app.one.team.STEW.Login
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:39:9-40:20
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:43:9-44:20
 	android:name
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:39:19-69
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:43:19-69
 service#jbnu.moblie.app.one.team.STEW.UploadToStorage
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:41:9-43:19
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:45:9-47:19
 	android:name
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:41:18-49
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:45:18-49
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:44:9-46:69
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:48:9-50:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:46:13-66
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:50:13-66
 	android:name
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:45:13-58
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:49:13-58
 meta-data#com.google.mlkit.vision.DEPENDENCIES
-ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:47:9-49:35
+ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:51:9-53:35
 	android:value
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:49:13-32
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:53:13-32
 	android:name
-		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:48:13-64
+		ADDED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml:52:13-64
 uses-sdk
 INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\ipkjw\Desktop\android\android_app_SeeThEWorld_STEW\SeeThEWorld\app\src\main\AndroidManifest.xml
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\1cc324bca91cb281f85c4c1528b9e48b\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\1cc324bca91cb281f85c4c1528b9e48b\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\95c27f1e561f59170f577bf124144243\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\95c27f1e561f59170f577bf124144243\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\57eaa9415bddadcf0bb4e692468635f4\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
@@ -313,6 +343,12 @@ MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\ipkjw\.gradl
 MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-core:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3ce44ab011257bfad095a92706483a5e\jetified-firebase-core-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3ce44ab011257bfad095a92706483a5e\jetified-firebase-core-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate-model:20.0.7] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\ec5f7fff909647d510c9aba7752153af\jetified-firebase-ml-natural-language-translate-model-20.0.7\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate-model:20.0.7] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\ec5f7fff909647d510c9aba7752153af\jetified-firebase-ml-natural-language-translate-model-20.0.7\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\54867c9f03b007eeeec6f0e4aff3c685\jetified-firebase-analytics-17.4.3\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\54867c9f03b007eeeec6f0e4aff3c685\jetified-firebase-analytics-17.4.3\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\40901ca6ce3fedd904480108591740da\jetified-firebase-auth-interop-19.0.0\AndroidManifest.xml:5:5-44
@@ -323,6 +359,8 @@ MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\ipk
 MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\e5795443aa52a3bb152afbfbd1fb222c\jetified-play-services-auth-base-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-vision-image-label:18.0.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\69fc9f293927419b7adfb9ff6900866b\jetified-play-services-vision-image-label-18.0.3\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-vision-image-label:18.0.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\69fc9f293927419b7adfb9ff6900866b\jetified-play-services-vision-image-label-18.0.3\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-ml-common:22.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5df68e997ad42d9e697178ed583987fe\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-ml-common:22.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5df68e997ad42d9e697178ed583987fe\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-vision-face-contour-internal:16.0.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d2da00e9346c5195b6eb15c22b0df78e\jetified-play-services-vision-face-contour-internal-16.0.1\AndroidManifest.xml:5:5-44
@@ -337,10 +375,14 @@ MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ipkj
 MERGED from [com.google.android.gms:play-services-clearcut:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5e7f37f763ca279bbd490031cf0208e3\jetified-play-services-clearcut-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3b629effeed32d263f2a3ddc8817d08b\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-phenotype:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\3b629effeed32d263f2a3ddc8817d08b\jetified-play-services-phenotype-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-ml-natural-language-smart-reply:18.0.7] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\6afe6bc8afb92c14c23be60c98632a4c\jetified-firebase-ml-natural-language-smart-reply-18.0.7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-ml-natural-language-smart-reply:18.0.7] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\6afe6bc8afb92c14c23be60c98632a4c\jetified-firebase-ml-natural-language-smart-reply-18.0.7\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\8ae93dfc83e04a2b5791c39b692b7fe3\jetified-play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-flags:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\8ae93dfc83e04a2b5791c39b692b7fe3\jetified-play-services-flags-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:21:5-23:41
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\be2a164d7c25251de9814bfeda4fbd16\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
@@ -349,6 +391,8 @@ MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\ipkjw\.g
 MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\ac6a73fb7ebfd3402c56994098ef0659\jetified-firebase-installations-interop-16.0.0\AndroidManifest.xml:19:5-21:41
@@ -461,14 +505,22 @@ MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\ipkjw\.gradl
 MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-ml-common:22.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5df68e997ad42d9e697178ed583987fe\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:8:9-14:19
 MERGED from [com.google.firebase:firebase-ml-common:22.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5df68e997ad42d9e697178ed583987fe\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:8:9-14:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:14:9-20:19
 MERGED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:12:9-16:19
+MERGED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:12:9-16:19
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:32:9-36:35
 	android:exported
@@ -547,6 +599,8 @@ MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:10:5-79
@@ -575,6 +629,18 @@ ADDED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\
 		ADDED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+meta-data#com.google.firebase.components:com.google.firebase.ml.naturallanguage.NaturalLanguageRegistrar
+ADDED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-ml-natural-language:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\712e6477d01b9947a8201b39892481d1\jetified-firebase-ml-natural-language-22.0.0\AndroidManifest.xml:13:17-126
+meta-data#com.google.firebase.components:com.google.firebase.ml.naturallanguage.translate.NaturalLanguageTranslateRegistrar
+ADDED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:12:13-14:85
+	android:value
+		ADDED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:14:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-ml-natural-language-translate:22.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\35ad741f955171dc39672c5e4dfa6d76\jetified-firebase-ml-natural-language-translate-22.0.0\AndroidManifest.xml:13:17-145
 meta-data#com.google.firebase.components:com.google.firebase.ml.common.CommonComponentRegistrar
 ADDED from [com.google.firebase:firebase-ml-common:22.1.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\5df68e997ad42d9e697178ed583987fe\jetified-firebase-ml-common-22.1.1\AndroidManifest.xml:11:13-13:85
 	android:value
@@ -615,6 +681,12 @@ ADDED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\User
 		ADDED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:32:17-82
 	android:name
 		ADDED from [com.google.android.gms:play-services-measurement-api:17.4.3] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\d5552a3996f76de5fed58bcb0a1e63b5\jetified-play-services-measurement-api-17.4.3\AndroidManifest.xml:31:17-139
+meta-data#com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar
+ADDED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-config:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\7ad087a03a0d9358d580fa77fff3034d\jetified-firebase-config-19.0.0\AndroidManifest.xml:33:17-117
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-iid:20.1.5] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\13d8d8b1efb3455f1d2cb9103ff3556f\jetified-firebase-iid-20.1.5\AndroidManifest.xml:26:5-82
 	android:name
@@ -653,6 +725,12 @@ ADDED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.g
 		ADDED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:19:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-installations:16.2.1] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\2ebd4a41fa7c7daceab7065f37bffed6\jetified-firebase-installations-16.2.1\AndroidManifest.xml:18:17-127
+meta-data#com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar
+ADDED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:13:13-15:85
+	android:value
+		ADDED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:15:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-abt:19.0.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\85fa8996dd9ad4140e62d3903af745d5\jetified-firebase-abt-19.0.0\AndroidManifest.xml:14:17-109
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\ipkjw\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
 	android:authorities

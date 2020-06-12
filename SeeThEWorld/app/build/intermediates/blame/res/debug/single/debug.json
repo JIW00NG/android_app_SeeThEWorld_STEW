@@ -92,6 +92,10 @@
         "source": "C:\\Users\\ipkjw\\Desktop\\android\\android_app_SeeThEWorld_STEW\\SeeThEWorld\\app\\src\\main\\res\\layout\\activity_recognised_record.xml"
     },
     {
+        "merged": "C:\\Users\\ipkjw\\Desktop\\android\\android_app_SeeThEWorld_STEW\\SeeThEWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_text_translation.xml.flat",
+        "source": "C:\\Users\\ipkjw\\Desktop\\android\\android_app_SeeThEWorld_STEW\\SeeThEWorld\\app\\src\\main\\res\\layout\\activity_text_translation.xml"
+    },
+    {
         "merged": "C:\\Users\\ipkjw\\Desktop\\android\\android_app_SeeThEWorld_STEW\\SeeThEWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_record.xml.flat",
         "source": "C:\\Users\\ipkjw\\Desktop\\android\\android_app_SeeThEWorld_STEW\\SeeThEWorld\\app\\src\\main\\res\\layout\\activity_record.xml"
     },

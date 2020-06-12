@@ -14,10 +14,15 @@
 
 package jbnu.moblie.app.one.team.STEW;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -27,11 +32,14 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.os.Handler;
 import android.os.Message;
 import android.os.Messenger;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -66,14 +74,17 @@ public class TextRecogniserActivity extends AppCompatActivity {
     private Button mCopyButton;
     private Button galleryButton;
     private Button recordButton;
+    private Button translationViewButton;
     private Bitmap mSelectedImage;
     private EditText mEditText;
+
+    private MyReceiver BR;
     private Uri filePath;
 
     private final int GET_GALLERY_IMAGE = 200;
 
     long childrenCount =0;
-    String text="";
+    private String text="";
     User user = new User();
     Uri imageUri;
     String imageString;
@@ -110,6 +121,11 @@ public class TextRecogniserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_recognise);
 
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("autologin",MODE_PRIVATE);
+        final SharedPreferences.Editor editor = pref.edit();
+
+        setReceiver();       // BroadReceiver on
+
         mImageView = findViewById(R.id.image_view);
         mEditText = findViewById(R.id.edit_text);
         mTextButton = findViewById(R.id.button_text);
@@ -117,6 +133,8 @@ public class TextRecogniserActivity extends AppCompatActivity {
         mCopyButton = findViewById(R.id.button_copy);
         recordButton = findViewById(R.id.button_goto_record);
         galleryButton = findViewById(R.id.button_gallery);
+        translationViewButton = findViewById(R.id.button_translationView);
+        translationViewButton.setEnabled(false);
         mSelectedImage = ((BitmapDrawable)getResources().getDrawable(R.drawable.photo)).getBitmap();
 
         recordButton.setOnClickListener(new View.OnClickListener() {
@@ -134,6 +152,7 @@ public class TextRecogniserActivity extends AppCompatActivity {
                 ClipboardManager clipboard = (ClipboardManager)getSystemService(Context.CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("recognised text",mEditText.getText());
                 clipboard.setPrimaryClip(clip);
+                Toast.makeText(TextRecogniserActivity.this, "Text copied to clipboard", Toast.LENGTH_SHORT).show();
             }
         });
         mTextButton.setOnClickListener(new View.OnClickListener() {
@@ -149,6 +168,8 @@ public class TextRecogniserActivity extends AppCompatActivity {
                 Intent intent = new Intent(TextRecogniserActivity.this,Login.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
+                editor.putBoolean("autologin",false);
+                editor.commit();
                 Toast.makeText(TextRecogniserActivity.this, "Log Out", Toast.LENGTH_SHORT).show();
             }
         });
@@ -156,6 +177,7 @@ public class TextRecogniserActivity extends AppCompatActivity {
         galleryButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                mEditText.setText("");
                 Intent intent = new Intent(Intent.ACTION_PICK);
                 intent.setDataAndType(android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
                 startActivityForResult(intent, GET_GALLERY_IMAGE);
@@ -200,8 +222,16 @@ public class TextRecogniserActivity extends AppCompatActivity {
                             @Override
                             public void onSuccess(Text texts) {
                                 mTextButton.setEnabled(true);
-                                String recognisedText = processTextRecognitionResult(texts);
+                                final String recognisedText = processTextRecognitionResult(texts);
                                 mEditText.setText(recognisedText);
+                                translationViewButton.setOnClickListener(new View.OnClickListener(){
+                                    @Override
+                                    public void onClick(View v) {
+                                        Intent intent = new Intent(TextRecogniserActivity.this, TextTranslationActivity.class);
+                                        intent.putExtra("text", mEditText.getText().toString());
+                                        startActivity(intent);
+                                    }
+                                });
                             }
                         })
                 .addOnFailureListener(
@@ -218,7 +248,7 @@ public class TextRecogniserActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.N)
     private String processTextRecognitionResult(Text texts) {
 
-
+        //String text="";
         List<Text.TextBlock> blocks = texts.getTextBlocks();
         if (blocks.size() == 0) {
             showToast("No text found");
@@ -253,6 +283,7 @@ public class TextRecogniserActivity extends AppCompatActivity {
                 serviceIntent.putExtra("filePath",filePathString);
                 serviceIntent.putExtra("count",childrenCount);
                 startService(serviceIntent);
+                createNotification();
 
                 text="";
             }
@@ -262,13 +293,60 @@ public class TextRecogniserActivity extends AppCompatActivity {
             }
 
         });
-
+        translationViewButton.setEnabled(true);
         return text;
     }
 
 
     private void showToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
+    private void setReceiver() {
+
+        BR = new MyReceiver();
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(Intent.ACTION_SCREEN_ON);
+        filter.addAction(Intent.ACTION_CAMERA_BUTTON);
+        filter.addAction(Intent.ACTION_TIME_TICK);
+
+        registerReceiver(BR, filter);
+
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(BR);
+    }
+
+    private void createNotification() {
+        Intent intent = new Intent(this, Record.class);
+        intent.putExtra("num", (int)childrenCount+1);
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "default");
+
+        builder.setSmallIcon(R.mipmap.ic_launcher);
+        builder.setContentTitle("OCR 파일 업로드완료");
+        builder.setContentText(String.valueOf(childrenCount+1) + "th file 바로가기");
+        builder.setAutoCancel(true);
+
+        NotificationCompat.BigPictureStyle pictureStyle = new NotificationCompat.BigPictureStyle(builder);
+        pictureStyle.bigPicture(mSelectedImage);
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(pendingIntent);
+
+        // 알림 표시
+        NotificationManager notificationManager = (NotificationManager) this.getSystemService(Context.NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            notificationManager.createNotificationChannel(new NotificationChannel("default", "기본 채널", NotificationManager.IMPORTANCE_DEFAULT));
+        }
+
+        notificationManager.notify(1, builder.build());
+    }
+    private void removeNotification() {
+
+        // Notification 제거
+        NotificationManagerCompat.from(this).cancel(1);
     }
 
 }
