@@ -1,4 +1,4 @@
-#Wed Jun 10 13:36:20 KST 2020
-base.0=C\:\\Users\\ipkjw\\Desktop\\android\\SeeThEWorld\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Fri Jun 12 20:57:27 KST 2020
+base.0=C\:\\Users\\ipkjw\\Desktop\\android\\android_app_SeeThEWorld_STEW\\SeeThEWorld\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -7,7 +7,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class User {
 
-    private String name,email;
+    private  String name;
+    private String email;
 
     FirebaseUser user = FirebaseAuth.getInstance(). getCurrentUser();
 
@@ -23,12 +24,10 @@ public class User {
     DatabaseReference databaseReference = database.getReference("user");
 
 
-    public void userRegist(String email,String username){
+    public void userRegist(String username){
 
-        databaseReference.child(name).child("easy_best").setValue(0);
-
-        databaseReference.child(name).child("email").setValue(email);
         databaseReference.child(name).child("user_name").setValue(username);
+        databaseReference.child(name).child("count").setValue(0);
     }
 
     public String getName(){

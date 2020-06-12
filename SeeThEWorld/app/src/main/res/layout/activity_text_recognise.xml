@@ -26,7 +26,7 @@
             android:id="@+id/edit_text"
             android:layout_width="match_parent"
             android:layout_height="220dp"
-            android:text="TextView" />
+            android:hint="Recognised Text" />
 
     </LinearLayout>
 
@@ -63,6 +63,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="COPY" />
+
+        <Button
+            android:id="@+id/button_goto_record"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="record" />
 
         <Button
             android:id="@+id/button_logout"

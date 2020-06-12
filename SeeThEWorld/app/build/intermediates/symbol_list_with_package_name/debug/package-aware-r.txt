@@ -802,8 +802,10 @@ id blocking
 id bottom
 id btn_join
 id buttonPanel
+id button_back
 id button_copy
 id button_gallery
+id button_goto_record
 id button_login
 id button_logout
 id button_sign_up
@@ -835,6 +837,7 @@ id editText_name
 id editText_passWord
 id edit_query
 id edit_text
+id edit_text_view
 id edittext_email
 id edittext_password
 id end
@@ -845,6 +848,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id forever
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -855,6 +859,7 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageView
 id image_view
 id info
 id invisible
@@ -864,6 +869,7 @@ id light
 id line1
 id line3
 id linearLayout
+id linear_root
 id listMode
 id list_item
 id media_actions
@@ -932,7 +938,10 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
+id textView2
 id textView_signUpTitle
+id text_view
 id time
 id title
 id titleDividerNoCustom
@@ -989,7 +998,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_loading
 layout activity_login
+layout activity_recognised_record
+layout activity_record
 layout activity_sign_up
 layout activity_text_recognise
 layout custom_dialog

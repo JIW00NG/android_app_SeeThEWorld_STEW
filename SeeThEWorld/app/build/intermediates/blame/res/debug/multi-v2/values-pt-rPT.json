@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ipkjw\\Desktop\\android\\SeeThEWorld\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
+            "outputFile": "C:\\Users\\ipkjw\\Desktop\\android\\android_app_SeeThEWorld_STEW\\SeeThEWorld\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ipkjw\\.gradle\\caches\\transforms-2\\files-2.1\\ad072bd06501b4ced252e97ed9ee745e\\jetified-play-services-basement-17.0.0\\res\\values-pt-rPT\\values.xml",

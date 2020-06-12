@@ -57,7 +57,7 @@ public class SignUp extends AppCompatActivity {
 
                             Toast.makeText(SignUp.this, "회원가입 성공 ", Toast.LENGTH_SHORT).show();
                             User user = new User();
-                            user.userRegist(email,name);
+                            user.userRegist(name);
                             finish();
                         } else {
                             // 계정이 중복된 경우

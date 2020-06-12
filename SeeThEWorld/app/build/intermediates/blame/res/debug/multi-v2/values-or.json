@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ipkjw\\Desktop\\android\\SeeThEWorld\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
+            "outputFile": "C:\\Users\\ipkjw\\Desktop\\android\\android_app_SeeThEWorld_STEW\\SeeThEWorld\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ipkjw\\.gradle\\caches\\transforms-2\\files-2.1\\95c27f1e561f59170f577bf124144243\\appcompat-1.1.0\\res\\values-or\\values-or.xml",

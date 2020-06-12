@@ -19,12 +19,18 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Handler;
+import android.os.Message;
+import android.os.Messenger;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
@@ -36,6 +42,11 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.mlkit.vision.common.InputImage;
 import com.google.mlkit.vision.text.Text;
 import com.google.mlkit.vision.text.TextRecognition;
@@ -54,10 +65,22 @@ public class TextRecogniserActivity extends AppCompatActivity {
     private Button logoutButton;
     private Button mCopyButton;
     private Button galleryButton;
+    private Button recordButton;
     private Bitmap mSelectedImage;
     private EditText mEditText;
+    private Uri filePath;
 
     private final int GET_GALLERY_IMAGE = 200;
+
+    long childrenCount =0;
+    String text="";
+    User user = new User();
+    Uri imageUri;
+    String imageString;
+    String filePathString;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference databaseReference = database.getReference("User").child(user.getName());
+
 
     /**
      * Number of results to show in the UI.
@@ -92,8 +115,18 @@ public class TextRecogniserActivity extends AppCompatActivity {
         mTextButton = findViewById(R.id.button_text);
         logoutButton = findViewById(R.id.button_logout);
         mCopyButton = findViewById(R.id.button_copy);
+        recordButton = findViewById(R.id.button_goto_record);
         galleryButton = findViewById(R.id.button_gallery);
         mSelectedImage = ((BitmapDrawable)getResources().getDrawable(R.drawable.photo)).getBitmap();
+
+        recordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TextRecogniserActivity.this,RecognisedRecordActivity.class);
+                intent.putExtra("user",user.getName());
+                startActivity(intent);
+            }
+        });
 
         mCopyButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,6 +147,7 @@ public class TextRecogniserActivity extends AppCompatActivity {
             public void onClick(View view) {
                 signOut();
                 Intent intent = new Intent(TextRecogniserActivity.this,Login.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 Toast.makeText(TextRecogniserActivity.this, "Log Out", Toast.LENGTH_SHORT).show();
             }
@@ -123,7 +157,7 @@ public class TextRecogniserActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_PICK);
-                intent. setDataAndType(android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
+                intent.setDataAndType(android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
                 startActivityForResult(intent, GET_GALLERY_IMAGE);
 
             }
@@ -139,7 +173,12 @@ public class TextRecogniserActivity extends AppCompatActivity {
         if (requestCode == GET_GALLERY_IMAGE && resultCode == RESULT_OK && data != null && data.getData() != null) {
 
             Uri selectedImageUri = data.getData();
+            imageUri=data.getData();
+            imageString = imageUri.toString();
+
             mImageView.setImageURI(selectedImageUri);
+            filePath = selectedImageUri;
+            filePathString = filePath.toString();
             try {
                 mSelectedImage = MediaStore.Images.Media.getBitmap(getContentResolver(), selectedImageUri);
             } catch (IOException e) {
@@ -157,12 +196,12 @@ public class TextRecogniserActivity extends AppCompatActivity {
         recognizer.process(image)
                 .addOnSuccessListener(
                         new OnSuccessListener<Text>() {
+                            @RequiresApi(api = Build.VERSION_CODES.N)
                             @Override
                             public void onSuccess(Text texts) {
                                 mTextButton.setEnabled(true);
                                 String recognisedText = processTextRecognitionResult(texts);
                                 mEditText.setText(recognisedText);
-
                             }
                         })
                 .addOnFailureListener(
@@ -176,9 +215,9 @@ public class TextRecogniserActivity extends AppCompatActivity {
                         });
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private String processTextRecognitionResult(Text texts) {
 
-        String text="";
 
         List<Text.TextBlock> blocks = texts.getTextBlocks();
         if (blocks.size() == 0) {
@@ -201,6 +240,28 @@ public class TextRecogniserActivity extends AppCompatActivity {
                 text=text.substring(0,text.length()-1).concat("\n");
             }
         }
+
+        databaseReference.child("text_recognise").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                childrenCount = (int)dataSnapshot.getChildrenCount();
+                databaseReference.child("text_recognise").child(String.valueOf(childrenCount+1)).setValue(text);
+                databaseReference.child("count").setValue(childrenCount+1);
+                Intent serviceIntent = new Intent(TextRecogniserActivity.this,UploadToStorage.class);
+                serviceIntent.putExtra("image",imageString);
+                serviceIntent.putExtra("filePath",filePathString);
+                serviceIntent.putExtra("count",childrenCount);
+                startService(serviceIntent);
+
+                text="";
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                text="";
+            }
+
+        });
 
         return text;
     }
